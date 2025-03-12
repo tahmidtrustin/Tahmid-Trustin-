@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Official website of Tahmid Trustin, a student, singer-songwriter, and founder of Trustin Univers.">
+<title>Tahmid Trustin - Official Website</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+color: #333;
+}
+header {
+background-color: #1d3557;
+color: white;
+text-align: center;
+padding: 20px;
+}
+header h1 {
+margin: 0;
+}
+section {
+padding: 20px;
+}
+.bio-section, .contributions, .social-links, .contact {
+margin-bottom: 30px;
+}
+h2 {
+color: #1d3557;
+}
+.social-links a {
+color: #1d3557;
+text-decoration: none;
+margin-right: 15px;
+}
+footer {
+text-align: center;
+background-color: #1d3557;
+color: white;
+padding: 10px;
+}
+footer a {
+color: white;
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Tahmid Trustin</h1>
+<p>Student | Singer-Songwriter | Social Media Influencer | Founder of Trustin Univers</p>
+</header>
+
+<section class="bio-section">
+<h2>About Tahmid Trustin</h2>
+<p><strong>Full Name:</strong> Tahmid Siddique</p>
+<p><strong>Place of Birth:</strong> Rajshahi, Bangladesh</p>
+<p><strong>Height:</strong> 1.72 meters (5'8")</p>
+<p>Tahmid Trustin, born Tahmid Siddique, is a dynamic and multi-talented individual known for his work as a student, singer-songwriter, and social media influencer. As the founder of Trustin Univers, he strives to empower individuals through his work and create a community that fosters growth, creativity, and positive change.</p>
+</section>
+
+<section class="contributions">
+<h2>Contributions</h2>
+<ul>
+<li><strong>Music and Songwriting:</strong> As a singer-songwriter, Tahmid creates soulful music with messages of love, self-discovery, and empowerment.</li>
+<li><strong>Social Media Influence:</strong> With an authentic voice, Tahmid uses platforms like Instagram, TikTok, and Facebook to inspire and connect with his followers.</li>
+<li><strong>Trustin Univers:</strong> Tahmid founded Trustin Univers to provide resources and create opportunities for individuals to grow personally and professionally.</li>
+</ul>
+</section>
+
+<section class="social-links">
+<h2>Follow Tahmid Trustin</h2>
+<p>Stay connected with Tahmid and Trustin Univers on social media:</p>
+<a href="https://www.instagram.com/tahmidtrustin_">Instagram (Personal)</a> |
+<a href="https://www.instagram.com/trustinunivers/">Instagram (Trustin Univers)</a> |
+<a href="https://www.facebook.com/trustinunivers">Facebook (Trustin Univers)</a> |
+<a href="https://www.tiktok.com/@tahmidtrustin">TikTok</a> |
+<a href="https://www.likee.com/@tahmidtrustin">Likee</a>
+</section>
+
+<section class="contact">
+<h2>Contact Tahmid Trustin</h2>
+<p>For inquiries or collaborations, feel free to reach out via email or through the official website.</p>
+<p><strong>Email:</strong> [Your email address here]</p>
+<p><strong>Official Website:</strong> <a href="https://trustinunivers.wordpress.com">Trustin Univers</a></p>
+</section>
+
+<footer>
+<p>&copy; 2025 Tahmid Trustin. All rights reserved.</p>
+<p><a href="https://trustinunivers.wordpress.com">Visit Trustin Univers</a></p>
+</footer>
+
+</body>
+</html>
