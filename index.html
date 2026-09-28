@@ -3,120 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official website of Tahmid Trustin, a student, singer-songwriter, and founder of Trustin Univers.">
+    <meta name="description" content="Official website of Tahmid Trustin - Founder, Creator & Musician.">
     <title>Tahmid Trustin - Official Website</title>
+    
+    <!-- Google Fonts for Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #161f33;
+            --accent-red: #ff3b47;
+            --accent-red-hover: #e60012;
+            --text-main: #f0f4f8;
+            --text-muted: #a0aec0;
+            --header-bg: #0f172a;
+            --border-color: #2d3748;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
         }
+
+        /* HEADER & NAVIGATION */
         header {
-            background-color: #1d3557;
-            color: white;
+            background-color: var(--header-bg);
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-red);
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* HERO SECTION */
+        .hero {
             text-align: center;
-            padding: 30px 20px;
+            padding: 60px 20px 40px;
+            background: linear-gradient(180deg, var(--header-bg) 0%, var(--bg-color) 100%);
         }
-        header h1 {
-            margin: 0 0 10px 0;
+
+        .profile-pic-container {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 5px;
+            background: linear-gradient(135deg, var(--accent-red), #4f46e5);
+            box-shadow: 0 8px 25px rgba(255, 59, 71, 0.3);
         }
-        header p {
-            margin: 0;
-            font-size: 1.1em;
+
+        .profile-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            background-color: #1e293b;
         }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin: 10px 0 5px;
+            font-weight: 700;
+        }
+
+        .hero p.tagline {
+            color: var(--accent-red);
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* MAIN CONTAINER & CARDS */
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
-        section {
-            margin-bottom: 30px;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+        .block-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
-        h2 {
-            color: #1d3557;
+
+        .block-card:hover {
+            border-color: rgba(255, 59, 71, 0.4);
+        }
+
+        .block-card h2 {
+            color: var(--text-main);
+            font-size: 1.6rem;
             margin-top: 0;
+            border-bottom: 2px solid var(--accent-red);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
         }
-        ul {
-            padding-left: 20px;
+
+        .bio-info p {
+            margin: 8px 0;
+            color: var(--text-muted);
         }
-        li {
-            margin-bottom: 10px;
+
+        .bio-info strong {
+            color: var(--text-main);
         }
-        .social-links a {
-            color: #1d3557;
+
+        /* INTERACTIVE BUTTONS & LINKS */
+        .interactive-link {
+            display: inline-block;
+            color: var(--text-main);
             text-decoration: none;
             font-weight: bold;
-            display: inline-block;
-            margin: 5px 10px 5px 0;
+            padding: 10px 18px;
+            margin: 8px 8px 8px 0;
+            background: #1e293b;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
         }
-        .social-links a:hover {
-            text-decoration: underline;
+
+        /* POP-UP + BOLD & RED HOVER STATE */
+        .interactive-link:hover, 
+        .interactive-link:active,
+        .interactive-link:focus {
+            color: #ffffff !important;
+            font-weight: 900 !important;
+            background-color: var(--accent-red) !important;
+            border-color: var(--accent-red) !important;
+            transform: translateY(-6px) scale(1.05); /* POP UP EFFECT */
+            box-shadow: 0 12px 20px rgba(255, 59, 71, 0.4);
+            outline: none;
         }
+
+        ul.contributions-list {
+            padding-left: 20px;
+        }
+
+        ul.contributions-list li {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+        }
+
+        ul.contributions-list strong {
+            color: var(--text-main);
+        }
+
+        /* FOOTER */
         footer {
             text-align: center;
-            background-color: #1d3557;
-            color: white;
-            padding: 15px 10px;
+            background-color: var(--header-bg);
+            border-top: 1px solid var(--border-color);
+            padding: 25px 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
+
         footer a {
-            color: white;
+            color: var(--accent-red);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
+    <!-- STICKY HEADER WITH NAVIGATION -->
     <header>
-        <h1>Tahmid Trustin</h1>
-        <p>Student | Singer-Songwriter | Social Media Influencer | Founder of Trustin Univers</p>
+        <div class="nav-container">
+            <div class="logo">Tahmid <span>Trustin</span></div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#contributions">Contributions</a>
+                <a href="#social">Social Links</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- HERO SECTION WITH PROFILE PICTURE -->
+    <div class="hero">
+        <div class="profile-pic-container">
+            <!-- Replace 'profile.jpg' with the actual path or URL of your image -->
+            <img src="https://via.placeholder.com/160" alt="Tahmid Trustin" class="profile-pic">
+        </div>
+        <h1>Tahmid Trustin</h1>
+        <p class="tagline">Student | Singer-Songwriter | Social Media Influencer | Founder</p>
+    </div>
+
     <main>
-        <section class="bio-section">
+        <!-- BLOCK 1: ABOUT SECTION -->
+        <section id="about" class="block-card">
             <h2>About Tahmid Trustin</h2>
-            <p><strong>Full Name:</strong> Tahmid Siddique</p>
-            <p><strong>Place of Birth:</strong> Rajshahi, Bangladesh</p>
-            <p><strong>Height:</strong> 1.72 meters (5'8")</p>
-            <p>Tahmid Trustin, born Tahmid Siddique, is a dynamic and multi-talented individual known for his work as a student, singer-songwriter, and social media influencer. As the founder of Trustin Univers, he strives to empower individuals through his work and create a community that fosters growth, creativity, and positive change.</p>
+            <div class="bio-info">
+                <p><strong>Full Name:</strong> Tahmid Siddique</p>
+                <p><strong>Place of Birth:</strong> Rajshahi, Bangladesh</p>
+                <p><strong>Height:</strong> 1.72 meters (5'8")</p>
+            </div>
+            <p style="margin-top: 15px; color: var(--text-muted);">
+                Tahmid Trustin, born Tahmid Siddique, is a dynamic and multi-talented individual known for his work as a student, singer-songwriter, and social media influencer. As the founder of <strong>Trustin Univers</strong>, he strives to empower individuals through his work and create a community that fosters growth, creativity, and positive change.
+            </p>
         </section>
 
-        <section class="contributions">
+        <!-- BLOCK 2: CONTRIBUTIONS SECTION -->
+        <section id="contributions" class="block-card">
             <h2>Contributions</h2>
-            <ul>
-                <li><strong>Music and Songwriting:</strong> As a singer-songwriter, Tahmid creates soulful music with messages of love, self-discovery, and empowerment.</li>
-                <li><strong>Social Media Influence:</strong> With an authentic voice, Tahmid uses platforms like Instagram, TikTok, and Facebook to inspire and connect with his followers.</li>
-                <li><strong>Trustin Univers:</strong> Tahmid founded Trustin Univers to provide resources and create opportunities for individuals to grow personally and professionally.</li>
+            <ul class="contributions-list">
+                <li>
+                    <strong>Music and Songwriting:</strong> As a singer-songwriter, Tahmid creates soulful music with messages of love, self-discovery, and empowerment.
+                </li>
+                <li>
+                    <strong>Social Media Influence:</strong> With an authentic voice, Tahmid uses platforms like Instagram, TikTok, and Facebook to inspire and connect with his followers.
+                </li>
+                <li>
+                    <strong>Trustin Univers:</strong> Tahmid founded Trustin Univers to provide resources and create opportunities for individuals to grow personally and professionally.
+                </li>
             </ul>
         </section>
 
-        <section class="social-links">
+        <!-- BLOCK 3: SOCIAL LINKS SECTION -->
+        <section id="social" class="block-card">
             <h2>Follow Tahmid Trustin</h2>
-            <p>Stay connected with Tahmid and Trustin Univers on social media:</p>
-            <a href="https://www.instagram.com/tahmidtrustin_" target="_blank" rel="noopener">Instagram (Personal)</a> |
-            <a href="https://www.instagram.com/trustinunivers/" target="_blank" rel="noopener">Instagram (Trustin Univers)</a> |
-            <a href="https://www.facebook.com/trustinunivers" target="_blank" rel="noopener">Facebook (Trustin Univers)</a> |
-            <a href="https://www.tiktok.com/@tahmidtrustin" target="_blank" rel="noopener">TikTok</a> |
-            <a href="https://www.likee.com/@tahmidtrustin" target="_blank" rel="noopener">Likee</a>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">
+                Hover or click any button below to visit official social media profiles:
+            </p>
+            <div>
+                <a href="https://www.instagram.com/tahmidtrustin_" target="_blank" rel="noopener" class="interactive-link">Instagram (Personal)</a>
+                <a href="https://www.instagram.com/trustinunivers/" target="_blank" rel="noopener" class="interactive-link">Instagram (Trustin Univers)</a>
+                <a href="https://www.facebook.com/trustinunivers" target="_blank" rel="noopener" class="interactive-link">Facebook Page</a>
+                <a href="https://www.tiktok.com/@tahmidtrustin" target="_blank" rel="noopener" class="interactive-link">TikTok</a>
+                <a href="https://www.likee.com/@tahmidtrustin" target="_blank" rel="noopener" class="interactive-link">Likee</a>
+            </div>
         </section>
 
-        <section class="contact">
-            <h2>Contact Tahmid Trustin</h2>
-            <p>For inquiries or collaborations, feel free to reach out via email or through the official website.</p>
-            <p><strong>Email:</strong> contact@trustinunivers.com</p>
-            <p><strong>Official Website:</strong> <a href="https://trustinunivers.wordpress.com" target="_blank" rel="noopener">Trustin Univers</a></p>
+        <!-- BLOCK 4: CONTACT SECTION -->
+        <section id="contact" class="block-card">
+            <h2>Contact & Support</h2>
+            <p style="color: var(--text-muted);">For inquiries or collaborations, feel free to reach out via email or through the official portal.</p>
+            <p><strong>Email:</strong> <span style="color: var(--accent-red);">contact@trustinunivers.com</span></p>
+            <p style="margin-top: 15px;">
+                <a href="https://trustinunivers.wordpress.com" target="_blank" rel="noopener" class="interactive-link">Visit Official Website</a>
+            </p>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 Tahmid Trustin. All rights reserved.</p>
-        <p><a href="https://trustinunivers.wordpress.com" target="_blank" rel="noopener">Visit Trustin Univers</a></p>
+        <p><a href="https://trustinunivers.wordpress.com" target="_blank" rel="noopener">Trustin Univers Official</a></p>
     </footer>
 
 </body>
